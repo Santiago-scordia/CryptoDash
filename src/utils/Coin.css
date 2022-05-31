@@ -9,6 +9,16 @@
     margin-top: 20px;
   }
   
+  .coin-row-start {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    height: 80px;
+    border-bottom: 1px solid #d7d7d7;
+    width: 900px;
+    margin-top: 10px;
+  }
+
   .coin-row {
     display: flex;
     flex-direction: row;
