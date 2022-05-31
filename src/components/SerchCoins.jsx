@@ -38,6 +38,16 @@ function SerchCoins() {
               onChange={handleChange}
               placeholder='Buscar'
             />
+              <div className='coin-row-start'>
+                <div className='coin'>
+                    <h2 className='coin-rank'>#</h2>
+                    <h1>Nombre</h1>
+              </div>
+                <div className='coin-data'>
+                  <p className='coin-price'>Precio</p>
+                  <p className='coin-volume'>Volumen</p>
+                </div>
+           </div>
           </form>
         </div>
         {filteredCoins.map(coin => {
