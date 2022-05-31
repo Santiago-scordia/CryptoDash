@@ -72,3 +72,8 @@
   .green {
     color: #11d811;
   }
+
+  .coin-rank {
+    font-size: 16px;
+    width: 60px;
+  }

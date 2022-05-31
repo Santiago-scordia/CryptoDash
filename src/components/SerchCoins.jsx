@@ -44,6 +44,7 @@ function SerchCoins() {
           return (
             <Coin
               key={coin.id}
+              rank={coin.market_cap_rank}
               name={coin.name}
               price={coin.current_price}
               symbol={coin.symbol}
