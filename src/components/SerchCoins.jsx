@@ -22,7 +22,6 @@ function SerchCoins() {
 
     const filteredCoinsUSDT = coins.filter(coin => coin.symbol.includes('USDT'));
     const filteredCoins100 = filteredCoinsUSDT.slice(0,100);
-
     return(
       <>
         <div>
