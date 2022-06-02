@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 
 body{
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Dosis', sans-serif !important;
 }
 
 .NavBar{
@@ -11,11 +11,11 @@ body{
 .branding{
     color: black !important;
     font-size: 25px;
-    font-weight: 1000;
+    font-weight: 1000 !important;
 }
 
 .NavLinks{
     color: black !important;
-    font-size: 18px;
-    font-weight: 1000;
+    font-size: px;
+    font-weight: 1000 !important;
 }

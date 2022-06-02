@@ -22,7 +22,7 @@ function SerchCoins() {
       return () => clearInterval(intervalId);
     })
 
-    const filteredCoinsUSDT = coins.filter(coin => wantedCoins.includes(coin.symbol));
+    const filteredCoinsUSDT = coins.filter(coin => coin.symbol.includes('USDT'));
     const filteredCoinsNull = filteredCoinsUSDT.filter(coin => coin.lastPrice > 0.01);
     const orderedCoinsDesc = filteredCoinsNull.sort((a,b) => b.quoteVolume - a.quoteVolume);
     const filteredCoins100 = orderedCoinsDesc.slice(0,100);
