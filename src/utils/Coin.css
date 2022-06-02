@@ -1,4 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+body{
+  background-color: black;
+}
+
+h2{
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  font-size: 23px;
+}
+
+.coin-symbol{
+  font-size: 25px;
+}
+
+
+
 .coin-container {
+  margin-top: 5px;
     display: flex;
     justify-content: center;
   }
@@ -25,7 +44,7 @@
     justify-content: start;
     align-items: center;
     height: 80px;
-    border-bottom: 1px solid #d7d7d7;
+    border-bottom: 1px solid #6e00d4;
     width: 900px;
   }
   

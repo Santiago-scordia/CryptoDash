@@ -17,7 +17,7 @@ function SerchCoins() {
           setCoins(res.data);
         })
         .catch(error => console.log(error));
-      }, 5000)
+      }, 2000)
 
       return () => clearInterval(intervalId);
     })

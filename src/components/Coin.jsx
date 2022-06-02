@@ -1,4 +1,5 @@
 import React from 'react';
+import '../utils/Coin.css';
 
 const Coin = ({symbol,price,priceChangePercent})=>{
 
@@ -6,11 +7,11 @@ const Coin = ({symbol,price,priceChangePercent})=>{
     <div className='coin-container'>
           <div className='coin-row'>
               <div className='coin'>
-                <p className='coin-symbol'>{symbol}</p>
+                <h2 className='coin-symbol'>{symbol}</h2>
               </div>
               <div className='coin-data'>
-                <p className='coin-price'>${price}</p>
-                <p className='coin-price'>{priceChangePercent}%</p>
+                <h2 className='coin-price'>${price}</h2>
+                <h2 className='coin-price'>{priceChangePercent}%</h2>
               </div>
           </div>
     </div>
