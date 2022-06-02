@@ -1,17 +1,22 @@
 import React from 'react';
 
-const Coin = ({symbol,price})=>{
+const Coin = ({rank,name,image,symbol,price,volume})=>{
 
   return(
+
     <div className='coin-container'>
-          <div className='coin-row'>
-              <div className='coin'>
+            <div className='coin-row'>
+                <div className='coin'>
+                <h2 className='coin-rank'>{rank}</h2>
+                <img src={image}alt='crypto'/>
+                <h1>{name}</h1>
                 <p className='coin-symbol'>{symbol}</p>
-              </div>
-              <div className='coin-data'>
+            </div>
+            <div className='coin-data'>
                 <p className='coin-price'>${price}</p>
-              </div>
-          </div>
+                <p className='coin-volume'>${volume.toLocaleString()}</p>
+            </div>
+            </div>
     </div>
   );
 };
