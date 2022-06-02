@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Coin = ({symbol,price})=>{
+const Coin = ({symbol,price,priceChangePercent})=>{
 
   return(
     <div className='coin-container'>
@@ -10,6 +10,7 @@ const Coin = ({symbol,price})=>{
               </div>
               <div className='coin-data'>
                 <p className='coin-price'>${price}</p>
+                <p className='coin-price'>{priceChangePercent}%</p>
               </div>
           </div>
     </div>
