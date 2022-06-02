@@ -17,7 +17,7 @@ function SerchCoins() {
           setCoins(res.data);
         })
         .catch(error => console.log(error));
-      }, 2000)
+      }, 3400)
 
       return () => clearInterval(intervalId);
     })
@@ -35,7 +35,7 @@ function SerchCoins() {
               <Coin
                 key={coin.symbol}
                 symbol={coin.symbol}
-                price={parseFloat(coin.lastPrice).toFixed(3)}
+                price={parseFloat(coin.lastPrice).toFixed(2)}
                 priceChangePercent={parseFloat(coin.priceChangePercent).toFixed(2)}
               />
             );
