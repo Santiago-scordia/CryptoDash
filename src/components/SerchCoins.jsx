@@ -6,18 +6,21 @@ import '../utils/Coin.css';
 function SerchCoins() {
     const [coins, setCoins] = useState([]);
     const [search, setSearch] = useState('');
+    
   
     useEffect(() => {
-      axios
-        .get(
-          'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'
+      const intervalId = setInterval(() => {
+        axios.get(
+          'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24'
         )
         .then(res => {
           setCoins(res.data);
-          console.log(res.data);
         })
         .catch(error => console.log(error));
-    }, []);
+      }, 1000)
+
+      return () => clearInterval(intervalId);
+    });
   
     const handleChange = e => {
       setSearch(e.target.value);
