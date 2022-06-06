@@ -12,9 +12,6 @@ function NavBar() {
                 <img alt="Logo" src={logo} width="40" height="auto" className='logo' />
                 <Navbar.Brand href="#home">CryptoDash</Navbar.Brand>
                 <Nav className="me-auto ">
-                <Nav.Link href="#graphics" className='text-navbar'>Graficos</Nav.Link>
-                <Nav.Link href="#tables">Tablas</Nav.Link>
-                <Nav.Link href="#tops">Tops</Nav.Link>
                 </Nav>
                 </Container>
             </Navbar>
