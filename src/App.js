@@ -7,6 +7,7 @@ import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./utils/themes.js";
 import { Button } from 'react-bootstrap';
 
+
 const StyledApp = styled.div`
   color: ${(props) => props.theme.fontColor};
 `;
@@ -23,7 +24,7 @@ function App() {
     <>
     <NavBar/>
     <Button onClick={() => themeToggler()} variant="outline-dark" className='buttontheme' size='sm'>Dark/Light</Button>
-    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme === "dark" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <StyledApp>
         <SerchCoins/>
